@@ -143,12 +143,12 @@ CUSTOM_SENSOR_SCHEMA = sensor.sensor_schema().extend(
 
 def custom_sensor_schema(
     message: int,
-    unit_of_measurement: str = sensor._UNDEFINED,
-    icon: str = sensor._UNDEFINED,
-    accuracy_decimals: int = sensor._UNDEFINED,
-    device_class: str = sensor._UNDEFINED,
-    state_class: str = sensor._UNDEFINED,
-    entity_category: str = sensor._UNDEFINED,
+    unit_of_measurement: str = sensor.cv.UNDEFINED,
+    icon: str = sensor.cv.UNDEFINED,
+    accuracy_decimals: int = sensor.cv.UNDEFINED,
+    device_class: str = sensor.cv.UNDEFINED,
+    state_class: str = sensor.cv.UNDEFINED,
+    entity_category: str = sensor.cv.UNDEFINED,
     raw_filters=[],
 ):
     return sensor.sensor_schema(
